@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        app:srcCompat="@drawable/me" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProfile"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Kevin Ochieng"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvName"
+        android:layout_marginTop="10dp"
+        android:background="#A9A9A9" />
+
+    <TextView
+        android:id="@+id/tvTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:text="Track : Android"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
+
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTrack"
+        android:text="County : Kenya"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCountry"
+        android:text="Email : kevincliffo@gmail.com"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:text="Phone Number : 254725036299"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:id="@+id/tvSlackUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPhone"
+        android:text="Slack Username : @kevo"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed" />
+</RelativeLayout>
